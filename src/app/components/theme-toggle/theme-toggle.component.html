@@ -1,0 +1,14 @@
+<button 
+  class="btn btn-sm" 
+  (click)="toggleTheme()"
+  [ngClass]="{
+    'btn-dark': themeService.darkMode$ | async,
+    'btn-light': !(themeService.darkMode$ | async)
+  }"
+>
+  <i class="bi" [ngClass]="{
+    'bi-sun': !(themeService.darkMode$ | async),
+    'bi-moon': (themeService.darkMode$ | async)
+  }"></i>
+  {{ (themeService.darkMode$ | async) ? 'Light Mode' : 'Dark Mode' }}
+</button>

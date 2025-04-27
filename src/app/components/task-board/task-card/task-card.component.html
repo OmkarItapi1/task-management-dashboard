@@ -1,0 +1,9 @@
+<div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ task.title }}</h5>
+      <p class="card-text" *ngIf="task.description">{{ task.description }}</p>
+      <small class="text-muted">
+        Created: {{ task.createdAt | date:'short' }}
+      </small>
+    </div>
+  </div>

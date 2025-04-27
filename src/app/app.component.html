@@ -1,0 +1,19 @@
+<header class="p-3 mb-4 border-bottom box">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1>Task Management Dashboard</h1>
+      <div class="d-flex gap-3">
+        <app-theme-toggle><i class="bi bi-sun"></i>
+        </app-theme-toggle>
+        <button class="btn btn-primary" (click)="openAddTaskModal()">
+          <i class="bi bi-plus-lg me-2"></i>
+          Add New Task
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container-fluid">
+  <app-task-board></app-task-board>
+</main>
