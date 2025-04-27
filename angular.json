@@ -3,7 +3,8 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "task-management-dashboard": {
+    "task-management-dashboard": 
+    {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -47,8 +48,12 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
-                }
+                },
+                
               ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
               "outputHashing": "all"
             },
             "development": {
